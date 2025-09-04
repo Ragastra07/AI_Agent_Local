@@ -1,4 +1,4 @@
-from .base_ollama import get_ollama_model
+from langchain_ollama import OllamaLLM
 
 def get_mistral_model(temperature=0.7, max_tokens=512):
-    return get_ollama_model("mistral", temperature, max_tokens)
+    return OllamaLLM("mistral", temperature, max_tokens)

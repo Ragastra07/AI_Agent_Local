@@ -1,4 +1,4 @@
-from .base_ollama import get_ollama_model
+from langchain_ollama import OllamaLLM
 
 def get_phi_model(temperature=0.7, max_tokens=512):
-    return get_ollama_model("phi3", temperature, max_tokens)
+    return OllamaLLM("phi3", temperature, max_tokens)

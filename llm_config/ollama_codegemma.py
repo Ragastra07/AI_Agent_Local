@@ -1,4 +1,4 @@
-from .base_ollama import get_ollama_model
+from langchain_ollama import OllamaLLM
 
 def get_codegemma_model(temperature=0.7, max_tokens=512):
-    return get_ollama_model("codegemma:2b", temperature, max_tokens)
+    return OllamaLLM("codegemma:2b", temperature, max_tokens)
