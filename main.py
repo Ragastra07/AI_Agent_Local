@@ -16,15 +16,15 @@ if __name__ == "__main__":
     settings = config.get_system_settings()
 
     # 2. chose an agent and get its model
-    agent_name = "jati"  
+    agent_name = "jati"
     model_name = config.get_agent_model(agent_name)
 
     # 3. Load the appropriate model
-    if model_name == "phi":
+    if model_name in ["phi", "ollama_phi"]:
         llm = get_phi_model(settings["temperature"], settings["max_tokens"])
-    elif model_name == "mistral":
+    elif model_name in ["mistral", "ollama_mistral"]:
         llm = get_mistral_model(settings["temperature"], settings["max_tokens"])
-    elif model_name == "codegemma":
+    elif model_name in ["codegemma", "ollama_codegemma"]:
         llm = get_codegemma_model(settings["temperature"], settings["max_tokens"])
     else:
         raise ValueError(f"Unknown model: {model_name}")
