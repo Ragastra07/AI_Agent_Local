@@ -1,0 +1,15 @@
+akasia:
+  description: "Helps with resumes, professional articles, and formal content."
+  default_model: "ollama_phi"
+
+mahoni:
+  description: "Coding assistant for local projects (like Copilot)."
+  default_model: "ollama_mistral"
+
+beringin:
+  description: "File system organizer and file management assistant."
+  default_model: "ollama_phi"
+
+jati:
+  description: "Terminal/DevOps/Linux assistant for troubleshooting and commands."
+  default_model: "ollama_codegemma"
