@@ -12,4 +12,4 @@ beringin:
 
 jati:
   description: "Terminal/DevOps/Linux assistant for troubleshooting and commands."
-  default_model: "phi"
+  default_model: "phi3"
